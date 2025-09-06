@@ -8,6 +8,10 @@
 - 针对标题、表格、代码块、引用、链接、列表、任务列表、数学公式等进行主题美化
 - 可通过 CSS 变量快速自定义主题主色和强调色
 
+## 效果展示
+
+<img width="970" height="754" alt="image" src="https://github.com/user-attachments/assets/bf8cd24d-13f4-4645-94be-38a488b0984f" />
+
 
 ## 目录结构
 ```
