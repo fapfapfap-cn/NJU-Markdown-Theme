@@ -1,0 +1,159 @@
+/*
+ * 实验报告主题样式 - 南京大学紫色主题
+ * 作者：张家奇
+ * 用途：Obsidian实验报告统一样式
+ * 主色调：#7A2D5C (南京大学紫)
+ */
+
+/* ==================== 变量定义 ==================== */
+:root {
+  --theme-primary: #7A2D5C;     /* 主色：南京大学紫 */
+  --theme-secondary: #2D7A5C;   /* 补色：青绿色 */
+  --theme-accent: #D4AF37;      /* 强调色：金色 */
+  --theme-light: #f9f6f8;       /* 浅色背景 */
+  --theme-border: #ddd;         /* 边框色 */
+}
+
+/* ==================== 标题样式 ==================== */
+/* 一级标题 - 主要标题 */
+.markdown-rendered h1 {
+  color: var(--theme-primary);
+  border-bottom: 3px solid var(--theme-primary);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* 二级标题 - 章节标题 */
+.markdown-rendered h2 {
+  color: var(--theme-primary);
+  border-bottom: 2px solid var(--theme-primary);
+  padding-bottom: 6px;
+}
+
+/* 三级标题 - 小节标题 */
+.markdown-rendered h3 {
+  color: var(--theme-primary);
+  border-left: 4px solid var(--theme-primary);
+  padding-left: 12px;
+}
+
+/* 四级标题 - 子标题 */
+.markdown-rendered h4 {
+  color: var(--theme-primary);
+}
+
+/* ==================== 表格样式 ==================== */
+/* 表格容器 */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+/* 表格头部 */
+.markdown-rendered table th {
+  background: var(--theme-light);
+  color: var(--theme-primary);
+  padding: 10px;
+  text-align: left;
+}
+
+/* 表格单元格 */
+.markdown-rendered table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--theme-border);
+}
+
+/* ==================== 代码样式 ==================== */
+/* 代码块 */
+.markdown-rendered pre {
+  border-left: 4px solid var(--theme-primary);
+  background: var(--theme-light);
+  padding: 12px;
+  margin: 16px 0;
+}
+
+/* 行内代码 */
+.markdown-rendered code {
+  background: var(--theme-light);
+  color: var(--theme-primary);
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* ==================== 文本样式 ==================== */
+/* 引用块 */
+.markdown-rendered blockquote {
+  border-left: 4px solid var(--theme-primary);
+  background: var(--theme-light);
+  padding: 12px;
+  margin: 16px 0;
+}
+
+/* 强调文本 */
+.markdown-rendered strong {
+  color: var(--theme-accent);
+  font-weight: bold;
+}
+
+/* 斜体文本 */
+.markdown-rendered em {
+  color: var(--theme-accent);
+  font-style: italic;
+}
+
+/* ==================== 链接和列表 ==================== */
+/* 链接样式 */
+.markdown-rendered a {
+  color: var(--theme-secondary);
+  text-decoration: none;
+}
+
+.markdown-rendered a:hover {
+  color: var(--theme-primary);
+  text-decoration: underline;
+}
+
+/* 无序列表标记 */
+.markdown-rendered ul li::marker {
+  color: var(--theme-primary);
+}
+
+/* 有序列表标记 */
+.markdown-rendered ol li::marker {
+  color: var(--theme-primary);
+}
+
+/* ==================== 分割线 ==================== */
+.markdown-rendered hr {
+  border: none;
+  height: 2px;
+  background: var(--theme-primary);
+  margin: 24px 0;
+}
+
+/* ==================== 图片样式 ==================== */
+.markdown-rendered img {
+  box-shadow: 0 4px 12px rgba(122, 45, 92, 0.15);
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+/* 任务列表 */
+.markdown-rendered .task-list-item-checkbox { 
+    accent-color: var(--theme-primary); 
+}
+.markdown-rendered .task-list-item.is-checked {
+    color: var(--theme-secondary);
+    text-decoration: line-through;
+}
+
+/* 数学公式 */
+.markdown-rendered .math {
+    color: var(--theme-primary);
+}
+.markdown-rendered .math-block {
+    background: var(--theme-light);
+    border: 1px solid var(--theme-border);
+    padding: 12px;
+}
